@@ -1,4 +1,6 @@
 import { TodoInfo } from '../TodoInfo';
 
-export const TodoList = ({ todos }) =>
-  todos.map(todo => <TodoInfo key={todo.id} todo={todo} />);
+export const TodoList = ({ todos }) => (
+  <div>
+    {todos.map((todo) => <TodoInfo key={todo.id} todo={todo} />)}
+  </div>);
